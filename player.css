@@ -18,16 +18,17 @@ body {
 }
 
 main {
-    background: #d9d7d5;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+.holder {
+    flex-basis: 100%;
+}
 
 /* container for music player */
 .container {
-    flex-basis: 100%;
-
+    
     position: absolute;
     height: 400pt;
     width: 420pt;
