@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Lexend+Deca:wght@100&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+body { 
+      min-height: 100vh;
+      background: white;
+      padding: 0;
+      margin: 0; 
+      font-family: 'Lexend Deca', sans-serif;}
+nav {
+    background: #222;
+    padding: 0 15px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.pill {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 0px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: right;
+    padding: 8px;
+    
+}
