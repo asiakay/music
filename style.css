@@ -30,19 +30,26 @@ h1 {
     margin: 0;
   }
 
-  nav {
+  #navbar {
+    float: left;
+
     width: 100%;
     z-index: 25;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 nav ul {
     padding-left: 0;
     background: rgba( 233, 236, 230, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    
 }
 				
 nav li {
@@ -81,6 +88,10 @@ nav a:active {
     bottom: 0;
     filter: blur(10px);
     z-index: -10;
+    background-size: cover;
+    background-attachment: fixed;
+
+
 }
 
 /* main {
