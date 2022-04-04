@@ -29,3 +29,5 @@ https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode
 https://hype4.academy/tools/glassmorphism-generator
 
 https://www.w3schools.com/css/css3_shadows.asp
+
+https://htmlandcssguidebook.com/advanced/responsive-nav/
