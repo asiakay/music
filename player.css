@@ -17,8 +17,17 @@ body {
     z-index: -1;
 }
 
+main {
+    background: #d9d7d5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
 /* container for music player */
 .container {
+    flex-basis: 100%;
+
     position: absolute;
     height: 400pt;
     width: 420pt;
@@ -40,7 +49,7 @@ body {
 .box {
     position: absolute;
     height: 50%;
-    width: 103%;
+    width: 100%;
     background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
     z-index: 4;
     bottom: -17%;
@@ -49,7 +58,7 @@ body {
 /* album cover */
 #thumbnail {
     position: absolute;
-    width: 103%;
+    width: 100%;
     top: -7%;
     transition: 1s;
     z-index: 3;
@@ -183,4 +192,14 @@ body {
 /* style to remove blue shade of the progress bar when clicked on/selected */
 #progress-bar:focus {
     outline: none;
+}
+
+@media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div.container {
+      flex-basis: 33%;
+    }
 }
