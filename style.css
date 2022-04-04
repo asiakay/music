@@ -31,7 +31,13 @@ h1 {
   }
 
 nav ul {
-	padding-left: 0;
+    padding-left: 0;
+    background: rgba( 233, 236, 230, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 				
 nav li {
@@ -46,9 +52,12 @@ nav a {
 }
 				
 nav a:hover, nav a:focus {
-	background-color: blue;
-	color: white;
-	outline: none;
+    background: rgba( 126, 211, 33, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 0px;
+    border: 0px solid rgba( 255, 255, 255, 0.18 );
 }
 
 nav a:active {
@@ -84,9 +93,9 @@ nav a:active {
     
     position: absolute;
     height: 400pt;
-    width: 420pt;
+    width: 360pt;
     margin: auto;
-    top: 100;
+    top: 200;
     left: 0;
     right: 0;
     bottom: 0;
@@ -127,7 +136,7 @@ nav a:active {
     font-weight: bold;
     font-size: 20px;
     bottom: 21%;
-    left: 28%;
+    left: 22%;
 }
 
 /* track title */
@@ -138,7 +147,7 @@ nav a:active {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 17px;
     bottom: 16%;
-    left: 28%;
+    left: 22%;
 }
 
 /* style for play and pause images */
