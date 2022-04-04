@@ -31,3 +31,6 @@ https://hype4.academy/tools/glassmorphism-generator
 https://www.w3schools.com/css/css3_shadows.asp
 
 https://htmlandcssguidebook.com/advanced/responsive-nav/
+
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp

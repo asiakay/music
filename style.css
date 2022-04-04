@@ -7,6 +7,7 @@
     }
 
 body { 
+  overflow: hidden;
       min-height: 100vh;
       background: white;
       padding: 0;
@@ -109,9 +110,9 @@ nav a:active {
     
     position: absolute;
     height: 400pt;
-    width: 80%;
+    width: 480pt;
     margin: auto;
-    top: 200;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -152,7 +153,7 @@ nav a:active {
     font-weight: bold;
     font-size: 19px;
     bottom: 21%;
-    left: 22%;
+    left: 17%;
 }
 
 /* track title */
@@ -163,7 +164,7 @@ nav a:active {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 17px;
     bottom: 16%;
-    left: 22%;
+    left: 17%;
 }
 
 /* style for play and pause images */
@@ -176,7 +177,7 @@ nav a:active {
     bottom: 15%;
     z-index: 4;
     font-size: 53px;
-    left: 9%;
+    left: 1%;
 }
 
 /* style for next and previous song images */
@@ -186,7 +187,7 @@ nav a:active {
     width: 30px;
     filter: invert(1);
     cursor: pointer;
-    bottom: 13.5%;
+    bottom: 5%;
     font-size: 40px;
     z-index: 4;
 }
@@ -199,7 +200,7 @@ nav a:active {
 /* unique style for previous song image */
 #previous-song {
     right: 5%;
-    bottom: 21.5%;
+    bottom: 11%;
 }
 
 /* style for current time of the track */
@@ -223,7 +224,7 @@ nav a:active {
     height: 50px;
     width: 50px;
     cursor: pointer;
-    bottom: -1%;
+    bottom: 1%;
     right: 11%;
     z-index: 4;
     font-family: 'Lexend Deca', sans-serif;
@@ -292,7 +293,14 @@ nav a:active {
 
 }
 
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+      .container {
+        max-width: 320px;
+    }
+}
 
 
 
