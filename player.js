@@ -12,9 +12,9 @@ let pPause = document.querySelector('#play-pause'); // element where play and pa
 
 songIndex = 0;
 songs = ['./assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3', './assets/music/Orphine.mp3']; // object storing paths for audio objects
-thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/asialakay_glitch.jpeg', './assets/images/AKChariot.jpeg']; // object storing paths for album covers and backgrounds
-songArtists = ['ASIA LAKAY', 'ASIA LAKAY', 'Asia Lakay']; // object storing track artists
-songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z", "SCALA"]; // object storing track titles
+thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/asialakay_glitch.jpeg']; // object storing paths for album covers and backgrounds
+songArtists = ['ASIA LAKAY', 'ASIA LAKAY']; // object storing track artists
+songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z"]; // object storing track titles
 
 
 
