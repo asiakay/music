@@ -11,10 +11,10 @@ const progressBar = document.querySelector('#progress-bar'); // element where pr
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
 songIndex = 0;
-songs = ['./assets/music/asialakay_WhatYouStarted.mp3', './assets/music/123trackMNMLRGNL.mp3', './assets/music/Orphine.mp3']; // object storing paths for audio objects
+songs = ['./assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3', './assets/music/Orphine.mp3']; // object storing paths for audio objects
 thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/asialakay_glitch.jpeg', './assets/images/AKChariot.jpeg']; // object storing paths for album covers and backgrounds
-songArtists = ['Asia LaKay', 'Asia Lakay', 'Asia Lakay']; // object storing track artists
-songTitles = ["What You Started", "MNMLRGNL X Jay-Z", "SCALA"]; // object storing track titles
+songArtists = ['ASIA LAKAY', 'ASIA LAKAY', 'Asia Lakay']; // object storing track artists
+songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z", "SCALA"]; // object storing track titles
 
 
 
