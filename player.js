@@ -10,32 +10,34 @@ const songTitle = document.querySelector('.song-title'); // element where track 
 const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
 let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
+
+// function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
+
 songIndex = 0;
-songs = ['./assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3', './assets/music/Orphine.mp3']; // object storing paths for audio objects
-thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/asialakay_glitch.jpeg']; // object storing paths for album covers and backgrounds
-songArtists = ['ASIA LAKAY', 'ASIA LAKAY']; // object storing track artists
-songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z"]; // object storing track titles
-
-
-
-
+songs = ['./assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3',
+'./assets/music/BLUEBERRYFUNK.mp3', './assets/music/Orphine.mp3', './assets/music/street%20beat%20mix%20down%20air%20cymb.mp3','./assets/music/fareast12615.mp3', './assets/music/El7_7v2.mp3', './assets/music/hologramv3.mp3', './assets/music/stone_roses.mp3']; // object storing paths for audio objects
+thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg' ]; // object storing paths for album covers and backgrounds
+songArtists = ['ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY']; // object storing track artists
+songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z", "BLUEBERRY FUNK", "Orphine", "Street Beat", "Far East", "El7", "Hologram", "Stone Roses"]; // object storing track titles
 
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
 let playing = true;
+
 function playPause() {
     if (playing) {
-        const song = document.querySelector('#song'),
-        thumbnail = document.querySelector('#thumbnail');
+const song = document.querySelector('#song'),
+thumbnail = document.querySelector('#thumbnail');
 
-        pPause.src = "./assets/icons/pause.png"
-        thumbnail.style.transform = "scale(1.15)";
+pPause.src = "./assets/icons/pause.png"; // changes play to pause
+      
+thumbnail.style.transform = "scale(1.15)"; //this will slightly zoom in the album cover for a cool effect
         
-        song.play();
-        playing = false;
+song.play(); // this will play the audio track
+playing = false;
     } else {
         pPause.src = "./assets/icons/play.png"
-        thumbnail.style.transform = "scale(1)"
+        thumbnail.style.transform = "scale(1)" //this will slightly zoom in the album cover for a cool effect
         
         song.pause();
         playing = true;
@@ -47,10 +49,9 @@ song.addEventListener('ended', function(){
     nextSong();
 });
 
-// function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
 function nextSong() {
     songIndex++;
-    if (songIndex > 1) {
+    if (songIndex > 8) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -68,8 +69,9 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 1;
+        songIndex = 8;
     };
+  
     song.src = songs[songIndex];
     thumbnail.src = thumbnails[songIndex];
     background.src = thumbnails[songIndex];
@@ -110,6 +112,22 @@ setInterval(updateProgressValue, 500);
 function changeProgressBar() {
     song.currentTime = progressBar.value;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

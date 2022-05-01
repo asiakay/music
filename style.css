@@ -72,9 +72,17 @@ nav a:hover, nav a:focus {
     border: 0px solid rgba( 255, 255, 255, 0.18 );
 }
 
-nav a:active {
+.active {
 	background-color: darkblue;
+  background: rgba( 126, 211, 33, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 0px;
+    border: 0px solid rgba( 255, 255, 255, 0.18 );
 }
+
+
 
 
 /* bottom navigation */
@@ -159,7 +167,6 @@ nav a:active {
 
 /* container for music player */
 .container {
-    
     position: absolute;
     height: 400pt;
     width: 480pt;
@@ -182,7 +189,7 @@ nav a:active {
     position: absolute;
     height: 200pt;
     width: 480pt;
-    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40, .6), rgb(133, 133, 133, .6));
     z-index: 4;
     bottom: -17%;
 }
@@ -342,6 +349,8 @@ nav a:active {
 	nav li {
 		display: inline-block;
 	}
+
+
 
   .bottomnav a {
 		border: none;
