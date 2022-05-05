@@ -14,11 +14,12 @@ let pPause = document.querySelector('#play-pause'); // element where play and pa
 // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track
 
 songIndex = 0;
-songs = ['./assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3',
+songs = [
+  './assets/music/asialakay_we_are_tomorrow_inst.mp3', './assets/music/asialakay_dragonfly.mp3', './assets/music/123trackMNMLRGNL.mp3',
 './assets/music/BLUEBERRYFUNK.mp3', './assets/music/Orphine.mp3', './assets/music/street%20beat%20mix%20down%20air%20cymb.mp3','./assets/music/fareast12615.mp3', './assets/music/El7_7v2.mp3', './assets/music/hologramv3.mp3', './assets/music/stone_roses.mp3']; // object storing paths for audio objects
-thumbnails = ['./assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg' ]; // object storing paths for album covers and backgrounds
-songArtists = ['ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY']; // object storing track artists
-songTitles = ["Dragonfly X", "MNMLRGNL X Jay-Z", "BLUEBERRY FUNK", "Orphine", "Street Beat", "Far East", "El7", "Hologram", "Stone Roses"]; // object storing track titles
+thumbnails = ['./assets/images/mountainasia_1293349407.jpeg','./assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg', './assets/images/mountainasia_1293349407.jpeg' ]; // object storing paths for album covers and backgrounds
+songArtists = ['ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY', 'ASIA LAKAY']; // object storing track artists
+songTitles = ["We Are Tomorrow", "Dragonfly X", "MNMLRGNL X Jay-Z", "BLUEBERRY FUNK", "Orphine", "Street Beat", "Far East", "El7", "Hologram", "Stone Roses"]; // object storing track titles
 
 
 // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
@@ -51,7 +52,7 @@ song.addEventListener('ended', function(){
 
 function nextSong() {
     songIndex++;
-    if (songIndex > 8) {
+    if (songIndex > 9) {
         songIndex = 0;
     };
     song.src = songs[songIndex];
@@ -69,7 +70,7 @@ function nextSong() {
 function previousSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = 8;
+        songIndex = 9;
     };
   
     song.src = songs[songIndex];
